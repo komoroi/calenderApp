@@ -1,0 +1,63 @@
+/* Calendar.css */
+.calendar {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.header button:hover {
+  background-color: #0056b3;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  background-color: #f9f9f9;
+}
+
+.day:hover {
+  background-color: #e0e0e0;
+}
+
+.event {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  background-color: #ff0000; /* デフォルト色 */
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

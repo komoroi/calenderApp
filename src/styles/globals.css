@@ -1,0 +1,97 @@
+.calendar {
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  background: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+}
+
+.month-year {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background: #f4f4f4;
+}
+
+.weekday {
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.day {
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  position: relative;
+}
+
+.day .events {
+  margin-top: 5px;
+}
+
+.event {
+  background: #f0f0f0;
+  border-radius: 4px;
+  padding: 2px 5px;
+  font-size: 12px;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal h2 {
+  margin-top: 0;
+}
+
+.modal input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.modal button {
+  margin-right: 10px;
+}
+/* src/styles/globals.css */
+.calendar, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+/* src/styles/globals.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* スクロールを隠す */
+}
